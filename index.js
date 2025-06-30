@@ -6,7 +6,7 @@ import random from "random";
 const path = "./data.json";
 
 // Set date range boundaries
-const startDate = moment("2025-06-01");
+const startDate = moment("2025-01-01");
 const endDate = moment("2025-06-30");
 
 // Calculate total days in our date range
