@@ -21,7 +21,7 @@ const makeCommits = (n) => {
   const dayOffset = random.int(0, totalDays);
   const commitDate = startDate.clone().add(dayOffset, "days").format();
 
-  console.log(`Commit ${5000 - n + 1}/5000 - Date: ${commitDate}`);
+  console.log(`Commit ${1000 - n + 1}/1000 - Date: ${commitDate}`);
 
   const data = { date: commitDate };
   
@@ -42,5 +42,5 @@ const makeCommits = (n) => {
   });
 };
 
-// Start the commit process with 5000 commits
-makeCommits(5000);
+// Start the commit process with 1000 commits
+makeCommits(1000);
