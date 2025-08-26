@@ -5,8 +5,8 @@ import random from "random";
 
 const path = "./data.json";
 
-// Set date range boundaries
-const startDate = moment("2025-07-01");
+// Set date range boundaries (YYYY-MM-DD  )
+const startDate = moment("2025-01-01");
 const endDate = moment("2025-08-23");
 
 // Calculate total days in our date range
@@ -21,7 +21,7 @@ const makeCommits = (n) => {
   const dayOffset = random.int(0, totalDays);
   const commitDate = startDate.clone().add(dayOffset, "days").format();
 
-  console.log(`Commit ${10000 - n + 1}/10000 - Date: ${commitDate}`);
+  console.log(`Commit ${1000 - n + 1}/1000 - Date: ${commitDate}`);
 
   const data = { date: commitDate };
   
